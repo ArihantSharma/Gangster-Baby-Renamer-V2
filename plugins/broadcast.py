@@ -10,12 +10,12 @@ ADMIN = int(os.environ.get("ADMIN", 1484670284))
 @Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["broadcast"]))
 async def broadcast(bot, message):
     if (message.reply_to_message):
-        ms = await message.reply_text("Geting All ids from database..\n Please wait")
+        ms = await message.reply_text("<pre>ɢᴇᴛᴛɪɴɢ ᴀʟʟ ɪᴅꜱ ꜰʀᴏᴍ ᴅᴀᴛᴀʙᴀꜱᴇ,ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ!</pre>")
         ids = getid()
         tot = len(ids)
         success = 0
         failed = 0
-        await ms.edit(f"Starting Broadcast... \n Sending Message To {tot} Users")
+        await ms.edit(f"<pre>Starting Broadcast... \n Sending Message To {tot} Users</pre>")
         for id in ids:
             try:
                 time.sleep(1)
