@@ -122,7 +122,8 @@ async def send_doc(client, message):
                                                                      [[InlineKeyboardButton("🔺 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🔺", url="https://t.me/Yugen_Bots")],
                                       [InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about"),InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ", callback_data='upgrade')],
                                       [InlineKeyboardButton("ɴᴇᴛᴡᴏʀᴋ", url='https://t.me/YugenNetwork')]
-                                                                    ]))
+                                                                    ])
+				)
         await message.reply_text(text=f"👾")
         return 
 
