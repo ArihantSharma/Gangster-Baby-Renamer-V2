@@ -27,9 +27,9 @@ async def upgrade(bot,update):
         Payment To Admins"""
 	keybord = InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("ᴀᴅᴍɪɴ 1",url = "https://t.me/iwilltouchyoulilnigga"),InlineKeyboardButton("ᴀᴅᴍɪɴ 2",url = "https://t.me/Sixteen_Years_Older")], 
-        			[InlineKeyboardButton("20₹",url = "https://telegra.ph/file/d4dd2eff91963bce9f283.jpg"),
-        			InlineKeyboardButton("45₹",url = "https://telegra.ph/file/4ce4ddd7c34420344247e.jpg"),
-        			InlineKeyboardButton("80₹",url = "https://telegra.ph/file/cc0fb7ac7348ebb6d56a6.jpg")],[InlineKeyboardButton("ᴄᴀɴᴄᴇʟ",callback_data = "cancel")  ]])
+        			[InlineKeyboardButton("20₹",url = "upi://pay?pa=arihantsharmaofficial@oksbi&pn=Arihant%20Sharma&am=20.00&cu=INR&aid=uGICAgMDAwIqrXQ"),
+        			InlineKeyboardButton("45₹",url = "upi://pay?pa=arihantsharmaofficial@oksbi&pn=Arihant%20Sharma&am=45.00&cu=INR&aid=uGICAgMDAwIqrXQ"),
+        			InlineKeyboardButton("80₹",url = "upi://pay?pa=arihantsharmaofficial@oksbi&pn=Arihant%20Sharma&am=80.00&cu=INR&aid=uGICAgMDAwIqrXQ")],[InlineKeyboardButton("ᴄᴀɴᴄᴇʟ",callback_data = "cancel")  ]])
 	await update.message.edit(text = text,reply_markup = keybord)
 	
 
@@ -58,6 +58,6 @@ async def upgradecm(bot,message):
         Payment To Admins"""
 	keybord = InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("ᴀᴅᴍɪɴ 1",url = "https://t.me/iwilltouchyoulilnigga"),InlineKeyboardButton("ᴀᴅᴍɪɴ 2",url = "https://t.me/Sixteen_Years_Older")], 
-        			[InlineKeyboardButton("20₹",url = "https://telegra.ph/file/d4dd2eff91963bce9f283.jpg"),
-        			InlineKeyboardButton("45₹",url = "https://telegra.ph/file/4ce4ddd7c34420344247e.jpg"),
-        			InlineKeyboardButton("80₹",url = "https://telegra.ph/file/cc0fb7ac7348ebb6d56a6.jpg")],[InlineKeyboardButton("ᴄᴀɴᴄᴇʟ",callback_data = "cancel")  ]])
+        			[InlineKeyboardButton("20₹",url = "upi://pay?pa=arihantsharmaofficial@oksbi&pn=Arihant%20Sharma&am=20.00&cu=INR&aid=uGICAgMDAwIqrXQ"),
+        			InlineKeyboardButton("45₹",url = "upi://pay?pa=arihantsharmaofficial@oksbi&pn=Arihant%20Sharma&am=45.00&cu=INR&aid=uGICAgMDAwIqrXQ"),
+        			InlineKeyboardButton("80₹",url = "upi://pay?pa=arihantsharmaofficial@oksbi&pn=Arihant%20Sharma&am=80.00&cu=INR&aid=uGICAgMDAwIqrXQ")],[InlineKeyboardButton("ᴄᴀɴᴄᴇʟ",callback_data = "cancel")  ]])
