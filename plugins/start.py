@@ -51,7 +51,7 @@ async def start(client, message):
                                 caption=txt,
                                 reply_markup=InlineKeyboardMarkup(
                                       [[InlineKeyboardButton("🔺 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🔺", url="https://t.me/Yugen_Bots")],
-                                      [InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about"),InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ", callback_data='upgrade')],
+                                      [InlineKeyboardButton("ᴀʙᴏᴜᴛ", text="about"),InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ", callback_data='upgrade')],
                                       [InlineKeyboardButton("ɴᴇᴛᴡᴏʀᴋ", url='https://t.me/YugenNetwork')]
                                       ]))
         return
