@@ -28,7 +28,8 @@ async def upgrade(bot,update):
         			InlineKeyboardButton("ᴀᴅᴍɪɴ 1",url = "https://t.me/iwilltouchyoulilnigga"),InlineKeyboardButton("ᴀᴅᴍɪɴ 2",url = "https://t.me/Sixteen_Years_Older")], 
         			[InlineKeyboardButton("20₹",url = "https://pay.upilink.in/pay/arihantsharmaofficial@oksbi?am=20"),
         			InlineKeyboardButton("45₹",url = "https://pay.upilink.in/pay/arihantsharmaofficial@oksbi?am=45"),
-        			InlineKeyboardButton("80₹",url = "https://pay.upilink.in/pay/arihantsharmaofficial@oksbi?am=80")],[InlineKeyboardButton("ᴄᴀɴᴄᴇʟ",callback_data = "cancel")  ]])
+        			InlineKeyboardButton("80₹",url = "https://pay.upilink.in/pay/arihantsharmaofficial@oksbi?am=80")],[InlineKeyboardButton("ᴄᴀɴᴄᴇʟ",callback_data = "cancel"),
+        			InlineKeyboardButton("ʜᴏᴍᴇ",callback_data = "start")  ]])
 	await update.message.edit(text = text,reply_markup = keybord)
 	
 
@@ -58,4 +59,5 @@ async def upgradecm(bot,message):
         			InlineKeyboardButton("ᴀᴅᴍɪɴ 1",url = "https://t.me/iwilltouchyoulilnigga"),InlineKeyboardButton("ᴀᴅᴍɪɴ 2",url = "https://t.me/Sixteen_Years_Older")], 
         			[InlineKeyboardButton("20₹",url = "https://pay.upilink.in/pay/arihantsharmaofficial@oksbi?am=20"),
         			InlineKeyboardButton("45₹",url = "https://pay.upilink.in/pay/arihantsharmaofficial@oksbi?am=45"),
-        			InlineKeyboardButton("80₹",url = "https://pay.upilink.in/pay/arihantsharmaofficial@oksbi?am=80")],[InlineKeyboardButton("ᴄᴀɴᴄᴇʟ",callback_data = "cancel")  ]])
+        			InlineKeyboardButton("80₹",url = "https://pay.upilink.in/pay/arihantsharmaofficial@oksbi?am=80")],[InlineKeyboardButton("ᴄᴀɴᴄᴇʟ",callback_data = "cancel"),
+        			InlineKeyboardButton("ʜᴏᴍᴇ",callback_data = "start")  ]])
