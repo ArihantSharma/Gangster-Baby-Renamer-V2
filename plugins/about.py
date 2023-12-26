@@ -12,4 +12,4 @@ async def start(client,message):
 	data = find_one(int(botid))
 	total_rename = data["total_rename"]
 	total_size = data["total_size"]
-	await message.reply_text(f"ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ : <a href="https://t.me/+RfAjS_m9WLg1OTE1">ʏᴜɢᴇɴ ʙᴏᴛꜱ</a>\nᴏᴡɴᴇʀ : {user.mention}\nʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ\nᴛᴏᴛᴀʟ ʀᴇɴᴀᴍᴇᴅ ꜰɪʟᴇ :- {total_rename}\nᴛᴏᴛᴀʟ ꜱɪᴢᴇ ʀᴇɴᴀᴍᴇᴅ :- {humanbytes(int(total_size))}\n\n```Thank you for all of your support```",quote=True)
+	await message.reply_text(f"ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ : <a href='https://t.me/+RfAjS_m9WLg1OTE1'>ʏᴜɢᴇɴ ʙᴏᴛꜱ</a>\nᴏᴡɴᴇʀ : {user.mention}\nʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ\nᴛᴏᴛᴀʟ ʀᴇɴᴀᴍᴇᴅ ꜰɪʟᴇ :- {total_rename}\nᴛᴏᴛᴀʟ ꜱɪᴢᴇ ʀᴇɴᴀᴍᴇᴅ :- {humanbytes(int(total_size))}\n\n```Thank you for all of your support```",quote=True)
