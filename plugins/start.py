@@ -118,7 +118,7 @@ async def send_doc(client, message):
         user_type = user_deta["usertype"]
     except:
         await message.reply_text(text=f"ʜᴇʟʟᴏ {message.from_user.mention}  **ᴡᴇ ᴀʀᴇ ᴄᴜʀʀᴇɴᴛʟʏ ᴡᴏʀᴋɪɴɢ ᴏɴ ᴛʜɪꜱ ɪꜱꜱᴜᴇ**\n\nᴘʟᴇᴀꜱᴇ ᴛʀʏ ᴛᴏ ʀᴇɴᴀᴍᴇ ꜰɪʟᴇꜱ ꜰʀᴏᴍ ʏᴏᴜʀ ᴀɴᴏᴛʜᴇʀ ᴀᴄᴄᴏᴜɴᴛ.\nʙᴇᴄᴀᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ ᴄᴀɴ'ᴛ ʀᴇɴᴀᴍᴇ ꜰɪʟᴇ ꜱᴇɴᴛ ʙʏ ꜱᴏᴍᴇ ɪᴅꜱ.\n\nɪꜰ ʏᴏᴜ ᴀʀᴇ ᴀɴ ᴀᴅᴍɪɴ ᴅᴏɴ'ᴛ ᴡᴏʀʀʏ ! ʜᴇʀᴇ ᴡᴇ ʜᴀᴠᴇ ᴀ ꜱᴏʟᴜᴛɪᴏɴ ꜰᴏʀ ʏᴏᴜ ᴅᴇᴀʀ {message.from_user.mention}.\n\nᴘʟᴇᴀꜱᴇ ᴜꜱᴇ \n👉 `/addpremium your_other_userid` 👈 ᴛᴏ ᴜꜱᴇ ᴘʀᴇᴍɪᴜᴍ ꜰᴇᴀᴜᴛʀᴇꜱ\n\n",
-                                  reply_markup=InlineKeyboardMarkup([
+                                  reply_markup=InlineKeyboardMarkup(
                                                                      [[InlineKeyboardButton("🔺 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🔺", url="https://t.me/Yugen_Bots")],
                                       [InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about"),InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ", callback_data='upgrade')],
                                       [InlineKeyboardButton("ɴᴇᴛᴡᴏʀᴋ", url='https://t.me/YugenNetwork')]
