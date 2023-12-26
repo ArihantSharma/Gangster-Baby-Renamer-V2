@@ -4,27 +4,26 @@ from pyrogram import Client , filters
 
 @Client.on_callback_query(filters.regex('upgrade'))
 async def upgrade(bot,update):
-	text = """**Free Plan User**
-	__Daily  Upload limit 1.2GB
-	Price Rs 0__
+	text = """**Fʀᴇᴇ Usᴇʀ Pʟᴀɴ**
+	__ᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 1.2ɢʙ
+        ᴘᴀʏ ʀꜱ 0 ᴘᴇʀ ᴍᴏɴᴛʜ__
 	
-	**🪙 Silver Tier 🪙** 
-	__Daily  Upload  limit 10GB
-	Price Rs 20 per Month__
+	**Bᴇɢɪɴɴᴇʀ Pʟᴀɴ** 
+	__ᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 10ɢʙ
+        ᴘᴀʏ ʀꜱ 20 ᴘᴇʀ ᴍᴏɴᴛʜ__
 	
-	**💫 Gold Tier 💫**
-	__Daily Upload limit 50GB
-	Price Rs 45 per Month__
+	**Iɴᴛᴇʀᴍᴇᴅɪᴀᴛᴇ Pʟᴀɴ**
+	__ᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 50ɢʙ
+        ᴘᴀʏ ʀꜱ 45 ᴘᴇʀ ᴍᴏɴᴛʜ__
 	
-	**💎 Diamond 💎**
-	__Daily Upload limit 100GB
-	Price Rs 80 per Month__
+	**Pʀᴏ Pʟᴀɴ**
+	__ᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 100ɢʙ
+        ᴘᴀʏ ʀꜱ 80 ᴘᴇʀ ᴍᴏɴᴛʜ__
 	
 	
-	Pay Using Upi I'd `arihantsharmaofficial@oksbi`
+	ᴘᴀʏ ᴜꜱɪɴɢ ᴜᴘɪ ɪᴅ `arihantsharmaofficial@oksbi`
 	
-	```After Payment Send Screenshots Of 
-        Payment To Admins```"""
+	```ᴀꜰᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ ꜱᴇɴᴅ ᴛʜᴇ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ᴛᴏ ᴀɴʏ ᴏꜰ ᴛʜᴇ ᴀᴅᴍɪɴꜱ```"""
 	keybord = InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("ᴀᴅᴍɪɴ 1",url = "https://t.me/iwilltouchyoulilnigga"),InlineKeyboardButton("ᴀᴅᴍɪɴ 2",url = "https://t.me/Sixteen_Years_Older")], 
         			[InlineKeyboardButton("20₹",url = "https://pay.upilink.in/pay/arihantsharmaofficial@oksbi?am=20"),
@@ -35,27 +34,26 @@ async def upgrade(bot,update):
 
 @Client.on_message(filters.private & filters.command(["upgrade"]))
 async def upgradecm(bot,message):
-	text = """**Free Plan User**
-	__Daily  Upload limit 1.2GB
-	Price Rs 0__
+	text = """**Fʀᴇᴇ Usᴇʀ Pʟᴀɴ**
+	__ᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 1.2ɢʙ
+        ᴘᴀʏ ʀꜱ 0 ᴘᴇʀ ᴍᴏɴᴛʜ__
 	
-	**🪙 Silver Tier 🪙** 
-	__Daily  Upload  limit 10GB
-	Price Rs 20 per Month__
+	**Bᴇɢɪɴɴᴇʀ Pʟᴀɴ** 
+	__ᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 10ɢʙ
+        ᴘᴀʏ ʀꜱ 20 ᴘᴇʀ ᴍᴏɴᴛʜ__
 	
-	**💫 Gold Tier 💫**
-	__Daily Upload limit 50GB
-	Price Rs 45 per Month__
+	**Iɴᴛᴇʀᴍᴇᴅɪᴀᴛᴇ Pʟᴀɴ**
+	__ᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 50ɢʙ
+        ᴘᴀʏ ʀꜱ 45 ᴘᴇʀ ᴍᴏɴᴛʜ__
 	
-	**💎 Diamond 💎**
-	__Daily Upload limit 100GB
-	Price Rs 80 per Month__
+	**Pʀᴏ Pʟᴀɴ**
+	__ᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 100ɢʙ
+        ᴘᴀʏ ʀꜱ 80 ᴘᴇʀ ᴍᴏɴᴛʜ__
 	
 	
-	Pay Using Upi I'd `arihantsharmaofficial@oksbi`
+	ᴘᴀʏ ᴜꜱɪɴɢ ᴜᴘɪ ɪᴅ `arihantsharmaofficial@oksbi`
 	
-	```After Payment Send Screenshots Of 
-        Payment To Admins```"""
+	```ᴀꜰᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ ꜱᴇɴᴅ ᴛʜᴇ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ᴛᴏ ᴀɴʏ ᴏꜰ ᴛʜᴇ ᴀᴅᴍɪɴꜱ```"""
 	keybord = InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("ᴀᴅᴍɪɴ 1",url = "https://t.me/iwilltouchyoulilnigga"),InlineKeyboardButton("ᴀᴅᴍɪɴ 2",url = "https://t.me/Sixteen_Years_Older")], 
         			[InlineKeyboardButton("20₹",url = "https://pay.upilink.in/pay/arihantsharmaofficial@oksbi?am=20"),
