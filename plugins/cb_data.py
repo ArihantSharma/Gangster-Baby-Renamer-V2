@@ -45,7 +45,7 @@ async def rename(bot, update):
     chat_id = update.message.chat.id
     id = update.message.reply_to_message_id
     await update.message.delete()
-    await update.message.reply_text(f"__Please enter the new filename...__\n\nNote:- Extension Not Required", reply_to_message_id=id,
+    await update.message.reply_text(f"__ᴘʟᴇᴀꜱᴇ ᴇɴᴛᴇʀ ᴛʜᴇ ɴᴇᴡ ꜰɪʟᴇɴᴀᴍᴇ...__\n\nɴᴏᴛᴇ :  ᴇxᴛᴇɴꜱɪᴏɴ ɴᴏᴛ ʀᴇQᴜɪʀᴇᴅ", reply_to_message_id=id,
                                     reply_markup=ForceReply(True))
     dateupdate(chat_id, date)
 
@@ -61,7 +61,7 @@ async def doc(bot, update):
     file_path = f"downloads/{new_filename}"
     message = update.message.reply_to_message
     file = message.document or message.video or message.audio
-    ms = await update.message.edit("```Trying To Download...```")
+    ms = await update.message.edit("```ᴛʀʏɪɴɢ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ...```")
     used_limit(update.from_user.id, file.file_size)
     c_time = time.time()
     total_used = used + int(file.file_size)
