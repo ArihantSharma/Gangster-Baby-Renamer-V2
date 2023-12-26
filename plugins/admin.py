@@ -92,7 +92,7 @@ async def cp1(bot,update):
 	user_id = id[1].replace(" ", "")
 	inlimit  = 524288000
 	uploadlimit(int(user_id),524288000)
-	usertype(int(user_id),"**ACCOUNT DOWNGRADED**")
+	usertype(int(user_id),"**𝙰𝙲𝙲𝙾𝚄𝙽𝚃 𝙳𝙾𝚆𝙽𝙶𝚁𝙰𝙳𝙴𝙳**")
 	addpre(int(user_id))
 	await update.message.edit("ACCOUNT DOWNGRADED\nThe user can only use 100MB/day from Data qota")
 	await bot.send_message(user_id,"⚠️ Warning ⚠️\n\n- ACCOUNT DOWNGRADED\nYou can only use 500MB/day from Data qota.\nCheck your plan here - /myplan")
