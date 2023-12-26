@@ -57,7 +57,7 @@ async def upgradecm(bot,message):
 	After Payment Send Screenshots Of 
         Payment To Admin @mRiderDM"""
 	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/mRiDerDM")], 
-        			[InlineKeyboardButton("Paytm",url = "https://p.paytm.me/xCTH/vo37hii9"),
-        			InlineKeyboardButton("Paytm",url = "https://p.paytm.me/xCTH/vo37hii9")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
-	await message.reply_text(text = text,reply_markup = keybord)
+        			InlineKeyboardButton("ᴀᴅᴍɪɴ 1",url = "https://t.me/iwilltouchyoulilnigga"),InlineKeyboardButtln("ᴀᴅᴍɪɴ 2",url = "https://t.me/Sixteen_Years_Older")], 
+        			[InlineKeyboardButton("20₹",url = "https://telegra.ph/file/d4dd2eff91963bce9f283.jpg"),
+        			InlineKeyboardButton("45₹",url = "https://telegra.ph/file/4ce4ddd7c34420344247e.jpg"),
+        			InlineKeyboardButton("80₹",url = "https://telegra.ph/file/cc0fb7ac7348ebb6d56a6.jpg")],[InlineKeyboardButton("ᴄᴀɴᴄᴇʟ",callback_data = "cancel")  ]])
