@@ -51,7 +51,7 @@ async def start(client, message):
                                 caption=txt,
                                 reply_markup=InlineKeyboardMarkup(
                                       [[InlineKeyboardButton("🔺 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🔺", url="https://t.me/Yugen_Bots")],
-                                      [InlineKeyboardButton("ᴀʙᴏᴜᴛ", text="about"),InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ", callback_data='upgrade')],
+                                      [InlineKeyboardButton("ʀᴇᴘᴏʀᴛ", url="https://t.me/YugenReportsBot"),InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ", callback_data='upgrade')],
                                       [InlineKeyboardButton("ɴᴇᴛᴡᴏʀᴋ", url='https://t.me/YugenNetwork')]
                                       ]))
         return
@@ -62,8 +62,8 @@ async def start(client, message):
                 await message.reply_photo(photo=LAZY_PIC,
                                          caption=txt,
                                          reply_markup=InlineKeyboardMarkup(
-                                             [[InlineKeyboardButton("🔺 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🔺", url="https://t.me/Yugen_Bots")],
-                                      [InlineKeyboardButton("ᴀʙᴏᴜᴛ", text="about"),InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ", callback_data='upgrade')],
+                                            [[InlineKeyboardButton("🔺 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🔺", url="https://t.me/Yugen_Bots")],
+                                      [InlineKeyboardButton("ʀᴇᴘᴏʀᴛ", url="https://t.me/YugenReportsBot"),InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ", callback_data='upgrade')],
                                       [InlineKeyboardButton("ɴᴇᴛᴡᴏʀᴋ", url='https://t.me/YugenNetwork')]
                                           ]))
             except:
@@ -79,8 +79,8 @@ async def start(client, message):
 	__ɪ ᴀᴍ ꜰɪʟᴇ ʀᴇɴᴀᴍᴇʀ ʙᴏᴛ, ᴘʟᴇᴀꜱᴇ ꜱᴇɴᴛ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ**ᴅᴏᴄᴜᴍᴇɴᴛ ᴏʀ ᴠɪᴅᴇᴏ** ᴀɴᴅ ᴇɴᴛᴇʀ ɴᴇᴡ ꜰɪʟᴇɴᴀᴍᴇ ᴛᴏ ʀᴇɴᴀᴍᴇ ɪᴛ__
 	""", reply_to_message_id=message.id,
                                      reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("🔺 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🔺", url="https://t.me/Yugen_Bots")],
-                                      [InlineKeyboardButton("ᴀʙᴏᴜᴛ", text="about"),InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ", callback_data='upgrade')],
+                                     [[InlineKeyboardButton("🔺 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🔺", url="https://t.me/Yugen_Bots")],
+                                      [InlineKeyboardButton("ʀᴇᴘᴏʀᴛ", url="https://t.me/YugenReportsBot"),InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ", callback_data='upgrade')],
                                       [InlineKeyboardButton("ɴᴇᴛᴡᴏʀᴋ", url='https://t.me/YugenNetwork')]
                                           ]))
     
@@ -119,8 +119,8 @@ async def send_doc(client, message):
     except:
         await message.reply_text(text=f"ʜᴇʟʟᴏ {message.from_user.mention}  **ᴡᴇ ᴀʀᴇ ᴄᴜʀʀᴇɴᴛʟʏ ᴡᴏʀᴋɪɴɢ ᴏɴ ᴛʜɪꜱ ɪꜱꜱᴜᴇ**\n\nᴘʟᴇᴀꜱᴇ ᴛʀʏ ᴛᴏ ʀᴇɴᴀᴍᴇ ꜰɪʟᴇꜱ ꜰʀᴏᴍ ʏᴏᴜʀ ᴀɴᴏᴛʜᴇʀ ᴀᴄᴄᴏᴜɴᴛ.\nʙᴇᴄᴀᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ ᴄᴀɴ'ᴛ ʀᴇɴᴀᴍᴇ ꜰɪʟᴇ ꜱᴇɴᴛ ʙʏ ꜱᴏᴍᴇ ɪᴅꜱ.\n\nɪꜰ ʏᴏᴜ ᴀʀᴇ ᴀɴ ᴀᴅᴍɪɴ ᴅᴏɴ'ᴛ ᴡᴏʀʀʏ ! ʜᴇʀᴇ ᴡᴇ ʜᴀᴠᴇ ᴀ ꜱᴏʟᴜᴛɪᴏɴ ꜰᴏʀ ʏᴏᴜ ᴅᴇᴀʀ {message.from_user.mention}.\n\nᴘʟᴇᴀꜱᴇ ᴜꜱᴇ \n👉 `/addpremium your_other_userid` 👈 ᴛᴏ ᴜꜱᴇ ᴘʀᴇᴍɪᴜᴍ ꜰᴇᴀᴜᴛʀᴇꜱ\n\n",
                                   reply_markup=InlineKeyboardMarkup(
-                                                                    [[InlineKeyboardButton("🔺 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🔺", url="https://t.me/Yugen_Bots")],
-                                      [InlineKeyboardButton("ᴀʙᴏᴜᴛ", text="about"),InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ", callback_data='upgrade')],
+                                                                   [[InlineKeyboardButton("🔺 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🔺", url="https://t.me/Yugen_Bots")],
+                                      [InlineKeyboardButton("ʀᴇᴘᴏʀᴛ", url="https://t.me/YugenReportsBot"),InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ", callback_data='upgrade')],
                                       [InlineKeyboardButton("ɴᴇᴛᴡᴏʀᴋ", url='https://t.me/YugenNetwork')]
                                                                     ])
 				)
