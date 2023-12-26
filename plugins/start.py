@@ -22,7 +22,7 @@ bot_username = os.environ.get("BOT_USERNAME","GangsterBaby_renamer_BOT")
 log_channel = int(os.environ.get("LOG_CHANNEL", ""))
 token = os.environ.get('TOKEN', '')
 botid = token.split(':')[0]
-FLOOD = 500
+FLOOD = 0
 LAZY_PIC = os.environ.get("LAZY_PIC", "")
 
 
@@ -30,11 +30,11 @@ LAZY_PIC = os.environ.get("LAZY_PIC", "")
 currentTime = datetime.datetime.now()
 
 if currentTime.hour < 12:
-    wish = "❤️ Good morning sweetheart ❤️"
+    wish = "❤️ ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ ꜱᴡᴇᴇᴛʜᴇᴀʀᴛ ❤️"
 elif 12 <= currentTime.hour < 12:
-    wish = '🤍 Good afternoon my Love 🤍'
+    wish = '🤍 ɢᴏᴏᴅ ᴀꜰᴛᴇʀɴᴏᴏɴ ᴍʏ ʟᴏᴠᴇ 🤍'
 else:
-    wish = '🦋 Good evening baby 🦋'
+    wish = '🦋 ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ ʙᴀʙʏ 🦋'
 
 # -------------------------------
 
@@ -45,8 +45,8 @@ async def start(client, message):
     try:
         id = message.text.split(' ')[1]
     except:
-        txt=f"""Hello {wish} {message.from_user.first_name } \n\n
-	I am file renamer bot, Please sent any telegram**Document Or Video** and enter new filename to rename it"""
+        txt=f"""ʏᴏᴏ {message.from_user.mention}, \n\n
+	ɪ ᴀᴍ ꜰɪʟᴇ ʀᴇɴᴀᴍᴇʀ ʙᴏᴛ, ᴘʟᴇᴀꜱᴇ ꜱᴇɴᴛ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ**ᴅᴏᴄᴜᴍᴇɴᴛ ᴏʀ ᴠɪᴅᴇᴏ** ᴀɴᴅ ᴇɴᴛᴇʀ ɴᴇᴡ ꜰɪʟᴇɴᴀᴍᴇ ᴛᴏ ʀᴇɴᴀᴍᴇ ɪᴛ"""
         await message.reply_photo(photo=LAZY_PIC,
                                 caption=txt,
                                 reply_markup=InlineKeyboardMarkup(
@@ -60,7 +60,7 @@ async def start(client, message):
     if id:
         if old == True:
             try:
-                await client.send_message(id, "Your Friend is Already Using Our Bot")
+                await client.send_message(id, "ʏᴏᴜʀ ꜰʀɪᴇɴᴅ ɪꜱ ᴀʟʀᴇᴀᴅʏ ᴜꜱɪɴɢ ᴏᴜʀ ʙᴏᴛ")
                 await message.reply_photo(photo=LAZY_PIC,
                                          caption=txt,
                                          reply_markup=InlineKeyboardMarkup(
@@ -73,15 +73,14 @@ async def start(client, message):
             except:
                 return
         else:
-            await client.send_message(id, "Congrats! You Won 100MB Upload limit")
+            await client.send_message(id, "ᴄᴏɴɢʀᴀᴛꜱ! ʏᴏᴜ ᴡᴏɴ 100ᴍʙ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ")
             _user_ = find_one(int(id))
             limit = _user_["uploadlimit"]
             new_limit = limit + 104857600
             uploadlimit(int(id), new_limit)
             await message.reply_text(text=f"""
-	Hello {wish} {message.from_user.first_name }\n\n
-	__I am file renamer bot, Please send any telegram 
-	**Document Or Video** and enter new filename to rename it__
+	ʏᴏᴏ {message.from_user.first_name }\n\n
+	__ɪ ᴀᴍ ꜰɪʟᴇ ʀᴇɴᴀᴍᴇʀ ʙᴏᴛ, ᴘʟᴇᴀꜱᴇ ꜱᴇɴᴛ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ**ᴅᴏᴄᴜᴍᴇɴᴛ ᴏʀ ᴠɪᴅᴇᴏ** ᴀɴᴅ ᴇɴᴛᴇʀ ɴᴇᴡ ꜰɪʟᴇɴᴀᴍᴇ ᴛᴏ ʀᴇɴᴀᴍᴇ ɪᴛ__
 	""", reply_to_message_id=message.id,
                                      reply_markup=InlineKeyboardMarkup(
                                          [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/LazyDeveloper")],
@@ -103,11 +102,11 @@ async def send_doc(client, message):
         except UserNotParticipant:
             _newus = find_one(message.from_user.id)
             user = _newus["usertype"]
-            await message.reply_text("**__You are not subscribed my channel__** ",
+            await message.reply_text("```ᴛᴏ ᴜꜱᴇ ᴍᴇ, ʏᴏᴜ ɢᴏᴛᴛᴀ ᴊᴏɪɴ ᴍʏ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ``` ",
                                      reply_to_message_id=message.id,
                                      reply_markup=InlineKeyboardMarkup(
-                                         [[InlineKeyboardButton("🔺 Update Channel 🔺", url=f"https://t.me/{update_channel}")]]))
-            await client.send_message(log_channel,f"🦋 #GangsterBaby_LOGS 🦋,\n\n**ID** : `{user_id}`\n**Name**: {message.from_user.first_name} {message.from_user.last_name}\n**User-Plan** : {user}\n\n ",
+                                         [[InlineKeyboardButton("👾 ʏᴜɢᴇɴ ʙᴏᴛꜱ 👾", url=f"https://t.me/{update_channel}")]]))
+            await client.send_message(log_channel,f"👾 #RENAME_LOGS 👾,\n\n**ID** : `{user_id}`\n**Name**: {message.from_user.first_name} {message.from_user.last_name}\n**User-Plan** : {user}\n\n ",
                                                                                                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔺 Restrict User ( **pm** ) 🔺", callback_data="ceasepower")]]))
             return
 
@@ -117,7 +116,7 @@ async def send_doc(client, message):
         prsize = bot_data['total_size']
         user_deta = find_one(user_id)
     except:
-        await message.reply_text("Use About cmd first /about")
+        await message.reply_text("ᴜꜱᴇ ᴀʙᴏᴜᴛ ᴄᴍᴅ ꜰɪʀꜱᴛ /about")
     try:
         used_date = user_deta["date"]
         buy_date = user_deta["prexdate"]
@@ -132,21 +131,21 @@ async def send_doc(client, message):
                                                                      InlineKeyboardButton("  Support Group 🦋", url='https://t.me/LazyPrincessSupport')],
                                                                      [InlineKeyboardButton("☕ Buy Me A Coffee ☕", url='https://p.paytm.me/xCTH/vo37hii9')]
                                                                     ]))
-        await message.reply_text(text=f"🦋")
+        await message.reply_text(text=f"👾")
         return 
 
     c_time = time.time()
 
     if user_type == "Free":
-        LIMIT = 600
+        LIMIT = 100
     else:
-        LIMIT = 50
+        LIMIT = 0
     then = used_date + LIMIT
     left = round(then - c_time)
     conversion = datetime.timedelta(seconds=left)
     ltime = str(conversion)
     if left > 0:
-        await message.reply_text(f"```Sorry Dude I am not only for YOU \n Flood control is active so please wait for {ltime}```", reply_to_message_id=message.id)
+        await message.reply_text(f"```ꜱᴏʀʀʏ ᴅᴜᴅᴇ ɪ ᴀᴍ ɴᴏᴛ ᴏɴʟʏ ꜰᴏʀ ʏᴏᴜ \n ꜰʟᴏᴏᴅ ᴄᴏɴᴛʀᴏʟ ɪꜱ ᴀᴄᴛɪᴠᴇ ꜱᴏ ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ ꜰᴏʀ {ltime}```", reply_to_message_id=message.id)
     else:
         # Forward a single message
         media = await client.get_messages(message.chat.id, message.id)
@@ -166,17 +165,17 @@ async def send_doc(client, message):
             used_limit(message.from_user.id, 0)
         remain = limit - used
         if remain < int(file.file_size):
-            await message.reply_text(f"100% of daily {humanbytes(limit)} data quota exhausted.\n\n  File size detected {humanbytes(file.file_size)}\n  Used Daily Limit {humanbytes(used)}\n\nYou have only **{humanbytes(remain)}** left on your Account.\nIf U Want to Rename Large File Upgrade Your Plan ", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Upgrade 💰💳", callback_data="upgrade")]]))
+            await message.reply_text(f"100% ᴏꜰ ᴅᴀɪʟʏ {humanbytes(limit)} ᴅᴀᴛᴀ Qᴜᴏᴛᴀ ᴇxʜᴀᴜꜱᴛᴇᴅ.\n\n  ꜰɪʟᴇ ꜱɪᴢᴇ ᴅᴇᴛᴇᴄᴛᴇᴅ {humanbytes(file.file_size)}\n  ᴜꜱᴇᴅ ᴅᴀɪʟʏ ʟɪᴍɪᴛ {humanbytes(used)}\n\nʏᴏᴜ ʜᴀᴠᴇ ᴏɴʟʏ **{humanbytes(remain)}** ʟᴇꜰᴛ ᴏɴ ʏᴏᴜʀ ᴀᴄᴄᴏᴜɴᴛ.\nɪꜰ ᴜ ᴡᴀɴᴛ ᴛᴏ ʀᴇɴᴀᴍᴇ ʟᴀʀɢᴇ ꜰɪʟᴇ ᴜᴘɢʀᴀᴅᴇ ʏᴏᴜʀ ᴘʟᴀɴ ", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ 💳", callback_data="upgrade")]]))
             return
         if value < file.file_size:
             
             if STRING:
                 if buy_date == None:
-                    await message.reply_text(f" You Can't Upload More Then {humanbytes(limit)} Used Daily Limit {humanbytes(used)} ", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Upgrade 💰💳", callback_data="upgrade")]]))
+                    await message.reply_text(f" ʏᴏᴜ ᴄᴀɴ'ᴛ ᴜᴘʟᴏᴀᴅ ᴍᴏʀᴇ ᴛʜᴇɴ {humanbytes(limit)} ᴜꜱᴇᴅ ᴅᴀɪʟʏ ʟɪᴍɪt {humanbytes(used)} ", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ 💳", callback_data="upgrade")]]))
                     return
                 pre_check = check_expi(buy_date)
                 if pre_check == True:
-                    await message.reply_text(f"""__What do you want me to do with this file?__\n**File Name** :- {filename}\n**File Size** :- {humanize.naturalsize(file.file_size)}\n**Dc ID** :- {dcid}""", reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 Rename", callback_data="rename"), InlineKeyboardButton("✖️ Cancel", callback_data="cancel")]]))
+                    await message.reply_text(f"""__ᴡʜᴀᴛ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴍᴇ ᴛᴏ ᴅᴏ ᴡɪᴛʜ ᴛʜɪꜱ ꜰɪʟᴇ?__\n**ꜰɪʟᴇ ɴᴀᴍᴇ** : `{filename}`\n**ꜰɪʟᴇ ꜱɪᴢᴇ** : {humanize.naturalsize(file.file_size)}\n**ᴅᴄ ɪᴅ** : {dcid}""", reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇɴᴀᴍᴇ", callback_data="rename"), InlineKeyboardButton("✖️ ᴄᴀɴᴄᴇʟ", callback_data="cancel")]]))
                     total_rename(int(botid), prrename)
                     total_size(int(botid), prsize, file.file_size)
                 else:
@@ -186,7 +185,7 @@ async def send_doc(client, message):
                     await message.reply_text(f'Your Plan Expired On {buy_date}', quote=True)
                     return
             else:
-                await message.reply_text("Can't upload files bigger than 2GB ")
+                await message.reply_text("ᴄᴀɴ'ᴛ ᴜᴘʟᴏᴀᴅ ꜰɪʟᴇꜱ ʙɪɢɢᴇʀ ᴛʜᴀɴ 2ɢʙ")
                 return
         else:
             if buy_date:
@@ -199,6 +198,5 @@ async def send_doc(client, message):
             fileid = file.file_id
             total_rename(int(botid), prrename)
             total_size(int(botid), prsize, file.file_size)
-            await message.reply_text(f"""__What do you want me to do with this file?__\n**File Name** :- {filename}\n**File Size** :- {filesize}\n**Dc ID** :- {dcid}""", reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("📝 Rename", callback_data="rename"),
-                  InlineKeyboardButton("✖️ Cancel", callback_data="cancel")]]))
+            await message.reply_text(f"""__ᴡʜᴀᴛ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴍᴇ ᴛᴏ ᴅᴏ ᴡɪᴛʜ ᴛʜɪꜱ ꜰɪʟᴇ?__\n**ꜰɪʟᴇ ɴᴀᴍᴇ** : `{filename}`\n**ꜰɪʟᴇ ꜱɪᴢᴇ** : {humanize.naturalsize(file.file_size)}\n**ᴅᴄ ɪᴅ** : {dcid}""", reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇɴᴀᴍᴇ", callback_data="rename"), InlineKeyboardButton("✖️ ᴄᴀɴᴄᴇʟ", callback_data="cancel")]]))
+                    
