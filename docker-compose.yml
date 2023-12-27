@@ -11,3 +11,4 @@ services:
       - CHANNEL=${CHANNEL}
       - ADMIN=${ADMIN}
       - LAZY_PIC=${LAZY_PIC}
+      - STRINGS=${STRINGS}
