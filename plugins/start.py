@@ -16,7 +16,7 @@ from helper.date import check_expi
 import os
 
 CHANNEL = os.environ.get('CHANNEL', "")
-STRING = os.environ.get("STRING", "")
+STRING = os.environ.get("STRING", "1BVtsOGcBu6e9YccONr7Bq1tbskWRjgU3vlwS9_TKx3Nh_HVoZbNVo5YZOagmwm3yqaHnPHKaGAztwtkCk4NzMFEMkQ8aYRwDbtsmbMjxMj-MBV_ySzDwOjBJGE_4Z8UUkWK1z70vNRy0Os2FNneR2CzNqWcZnEO69m_LlRdRnuj0kV_5Yaz9KNWndQAStOPsHIHbhiaAVV477MFMef8GqiqdX9imWCdzAeGNzMbnzff9WLjAXFXjRFaDVmWLRerFYeYoTMYLcfiskNtS8vgN72exzNGlcjb2K8q_5JL0bitWofpVh3DZ6Erc-1J9AqcN_zlh0pPoA3hvMlHdbdyOWhfYAAIBSvs=")
 ADMIN = int(os.environ.get("ADMIN", 1484670284))
 bot_username = os.environ.get("BOT_USERNAME","GangsterBaby_renamer_BOT")
 log_channel = int(os.environ.get("LOG_CHANNEL", ""))
