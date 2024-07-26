@@ -18,17 +18,17 @@ async def upgrade(bot,update):
 	
 	**Pʀᴏ Pʟᴀɴ**
 	__ᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 100ɢʙ
-        ᴘᴀʏ ʀꜱ 80 ᴘᴇʀ ᴍᴏɴᴛʜ__
+        ᴘᴀʏ ʀꜱ 70 ᴘᴇʀ ᴍᴏɴᴛʜ__
 	
 	
-	ᴘᴀʏ ᴜꜱɪɴɢ ᴜᴘɪ ɪᴅ `arihantsharmaofficial@oksbi`
+	ᴘᴀʏ ᴜꜱɪɴɢ ᴜᴘɪ ɪᴅ `yugenbots@ibl`
 	
 	```ᴀꜰᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ ꜱᴇɴᴅ ᴛʜᴇ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ᴛᴏ ᴀɴʏ ᴏꜰ ᴛʜᴇ ᴀᴅᴍɪɴꜱ```"""
-	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("ᴀᴅᴍɪɴ 1",url = "https://t.me/iwilltouchyoulilnigga"),InlineKeyboardButton("ᴀᴅᴍɪɴ 2",url = "https://t.me/Sixteen_Years_Older")], 
-        			[InlineKeyboardButton("20₹",url = "https://pay.upilink.in/pay/arihantsharmaofficial@oksbi?am=20"),
-        			InlineKeyboardButton("45₹",url = "https://pay.upilink.in/pay/arihantsharmaofficial@oksbi?am=45"),
-        			InlineKeyboardButton("80₹",url = "https://pay.upilink.in/pay/arihantsharmaofficial@oksbi?am=80")],[InlineKeyboardButton("ᴄᴀɴᴄᴇʟ",callback_data = "cancel")]])
+	keybord = InlineKeyboardMarkup([
+        			InlineKeyboardButton("ᴀᴅᴍɪɴ",url = "https://t.me/voatcb"), 
+        			[InlineKeyboardButton("20₹",url = "https://pay.upilink.in/pay/yugenbots@ibl?am=20"),
+        			InlineKeyboardButton("45₹",url = "https://pay.upilink.in/pay/yugenbots@ibl?am=45"),
+        			InlineKeyboardButton("70₹",url = "https://pay.upilink.in/pay/yugenbots@ibl?am=70")],[InlineKeyboardButton("ᴄᴀɴᴄᴇʟ",callback_data = "cancel")]])
 	await update.message.edit(text = text,reply_markup = keybord)
 	
 
@@ -48,14 +48,14 @@ async def upgradecm(bot,message):
 	
 	**Pʀᴏ Pʟᴀɴ**
 	__ᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 100ɢʙ
-        ᴘᴀʏ ʀꜱ 80 ᴘᴇʀ ᴍᴏɴᴛʜ__
+        ᴘᴀʏ ʀꜱ 70 ᴘᴇʀ ᴍᴏɴᴛʜ__
 	
 	
-	ᴘᴀʏ ᴜꜱɪɴɢ ᴜᴘɪ ɪᴅ `arihantsharmaofficial@oksbi`
+	ᴘᴀʏ ᴜꜱɪɴɢ ᴜᴘɪ ɪᴅ `yugenbots@ibl`
 	
 	```ᴀꜰᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ ꜱᴇɴᴅ ᴛʜᴇ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ᴛᴏ ᴀɴʏ ᴏꜰ ᴛʜᴇ ᴀᴅᴍɪɴꜱ```"""
-	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("ᴀᴅᴍɪɴ 1",url = "https://t.me/iwilltouchyoulilnigga"),InlineKeyboardButton("ᴀᴅᴍɪɴ 2",url = "https://t.me/Sixteen_Years_Older")], 
-        			[InlineKeyboardButton("20₹",url = "https://pay.upilink.in/pay/arihantsharmaofficial@oksbi?am=20"),
-        			InlineKeyboardButton("45₹",url = "https://pay.upilink.in/pay/arihantsharmaofficial@oksbi?am=45"),
-        			InlineKeyboardButton("80₹",url = "https://pay.upilink.in/pay/arihantsharmaofficial@oksbi?am=80")],[InlineKeyboardButton("ᴄᴀɴᴄᴇʟ",callback_data = "cancel")]])
+	keybord = InlineKeyboardMarkup([
+        			InlineKeyboardButton("ᴀᴅᴍɪɴ",url = "https://t.me/voatcb"), 
+        			[InlineKeyboardButton("20₹",url = "https://pay.upilink.in/pay/yugenbots@ibl?am=20"),
+        			InlineKeyboardButton("45₹",url = "https://pay.upilink.in/pay/yugenbots@ibl?am=45"),
+        			InlineKeyboardButton("70₹",url = "https://pay.upilink.in/pay/yugenbots@ibl?am=70")],[InlineKeyboardButton("ᴄᴀɴᴄᴇʟ",callback_data = "cancel")]])
