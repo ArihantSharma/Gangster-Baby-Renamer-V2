@@ -15,15 +15,15 @@ from helper.database import daily as daily_
 from helper.date import check_expi
 import os
 
-CHANNEL = os.environ.get('CHANNEL', "")
+CHANNEL = os.environ.get('CHANNEL', "Yugen_Bots")
 STRING = os.environ.get("STRING", "1BVtsOGcBu6e9YccONr7Bq1tbskWRjgU3vlwS9_TKx3Nh_HVoZbNVo5YZOagmwm3yqaHnPHKaGAztwtkCk4NzMFEMkQ8aYRwDbtsmbMjxMj-MBV_ySzDwOjBJGE_4Z8UUkWK1z70vNRy0Os2FNneR2CzNqWcZnEO69m_LlRdRnuj0kV_5Yaz9KNWndQAStOPsHIHbhiaAVV477MFMef8GqiqdX9imWCdzAeGNzMbnzff9WLjAXFXjRFaDVmWLRerFYeYoTMYLcfiskNtS8vgN72exzNGlcjb2K8q_5JL0bitWofpVh3DZ6Erc-1J9AqcN_zlh0pPoA3hvMlHdbdyOWhfYAAIBSvs=")
 ADMIN = int(os.environ.get("ADMIN", 1484670284))
-bot_username = os.environ.get("BOT_USERNAME","GangsterBaby_renamer_BOT")
-log_channel = int(os.environ.get("LOG_CHANNEL", ""))
-token = os.environ.get('TOKEN', '')
+bot_username = os.environ.get("BOT_USERNAME","YugenRenameBot")
+log_channel = int(os.environ.get("LOG_CHANNEL", "-1002080756028"))
+token = os.environ.get('TOKEN', '7264999897:AAEOQeOGQQPLWcmvT8rv47Tfd2u_oaMGHCo')
 botid = token.split(':')[0]
 FLOOD = 0
-LAZY_PIC = os.environ.get("LAZY_PIC", "")
+LAZY_PIC = os.environ.get("LAZY_PIC", "https://telegra.ph/file/8fe5276a43438e5390909.jpg")
 
 
 # Part of Day --------------------
@@ -51,7 +51,7 @@ async def start(client, message):
                                 caption=txt,
                                 reply_markup=InlineKeyboardMarkup(
                                       [[InlineKeyboardButton("🔺 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🔺", url="https://t.me/Yugen_Bots")],
-                                      [InlineKeyboardButton("ʀᴇᴘᴏʀᴛ", url="https://t.me/YugenReportsBot"),InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ", callback_data='upgrade')],
+                                      [InlineKeyboardButton("ʀᴇᴘᴏʀᴛ", url="https://t.me/Yugen_Bots_Support"),InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ", callback_data='upgrade')],
                                       [InlineKeyboardButton("ɴᴇᴛᴡᴏʀᴋ", url='https://t.me/YugenNetwork')]
                                       ]))
         return
@@ -63,7 +63,7 @@ async def start(client, message):
                                          caption=txt,
                                          reply_markup=InlineKeyboardMarkup(
                                             [[InlineKeyboardButton("🔺 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🔺", url="https://t.me/Yugen_Bots")],
-                                      [InlineKeyboardButton("ʀᴇᴘᴏʀᴛ", url="https://t.me/YugenReportsBot"),InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ", callback_data='upgrade')],
+                                      [InlineKeyboardButton("ʀᴇᴘᴏʀᴛ", url="https://t.me/Yugen_Bots_Support"),InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ", callback_data='upgrade')],
                                       [InlineKeyboardButton("ɴᴇᴛᴡᴏʀᴋ", url='https://t.me/YugenNetwork')]
                                           ]))
             except:
@@ -80,7 +80,7 @@ async def start(client, message):
 	""", reply_to_message_id=message.id,
                                      reply_markup=InlineKeyboardMarkup(
                                      [[InlineKeyboardButton("🔺 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🔺", url="https://t.me/Yugen_Bots")],
-                                      [InlineKeyboardButton("ʀᴇᴘᴏʀᴛ", url="https://t.me/YugenReportsBot"),InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ", callback_data='upgrade')],
+                                      [InlineKeyboardButton("ʀᴇᴘᴏʀᴛ", url="https://t.me/Yugen_Bots_Support"),InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ", callback_data='upgrade')],
                                       [InlineKeyboardButton("ɴᴇᴛᴡᴏʀᴋ", url='https://t.me/YugenNetwork')]
                                           ]))
     
@@ -120,7 +120,7 @@ async def send_doc(client, message):
         await message.reply_text(text=f"ʜᴇʟʟᴏ {message.from_user.mention}  **ᴡᴇ ᴀʀᴇ ᴄᴜʀʀᴇɴᴛʟʏ ᴡᴏʀᴋɪɴɢ ᴏɴ ᴛʜɪꜱ ɪꜱꜱᴜᴇ**\n\nᴘʟᴇᴀꜱᴇ ᴛʀʏ ᴛᴏ ʀᴇɴᴀᴍᴇ ꜰɪʟᴇꜱ ꜰʀᴏᴍ ʏᴏᴜʀ ᴀɴᴏᴛʜᴇʀ ᴀᴄᴄᴏᴜɴᴛ.\nʙᴇᴄᴀᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ ᴄᴀɴ'ᴛ ʀᴇɴᴀᴍᴇ ꜰɪʟᴇ ꜱᴇɴᴛ ʙʏ ꜱᴏᴍᴇ ɪᴅꜱ.\n\nɪꜰ ʏᴏᴜ ᴀʀᴇ ᴀɴ ᴀᴅᴍɪɴ ᴅᴏɴ'ᴛ ᴡᴏʀʀʏ ! ʜᴇʀᴇ ᴡᴇ ʜᴀᴠᴇ ᴀ ꜱᴏʟᴜᴛɪᴏɴ ꜰᴏʀ ʏᴏᴜ ᴅᴇᴀʀ {message.from_user.mention}.\n\nᴘʟᴇᴀꜱᴇ ᴜꜱᴇ \n👉 `/addpremium your_other_userid` 👈 ᴛᴏ ᴜꜱᴇ ᴘʀᴇᴍɪᴜᴍ ꜰᴇᴀᴜᴛʀᴇꜱ\n\n",
                                   reply_markup=InlineKeyboardMarkup(
                                                                    [[InlineKeyboardButton("🔺 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🔺", url="https://t.me/Yugen_Bots")],
-                                      [InlineKeyboardButton("ʀᴇᴘᴏʀᴛ", url="https://t.me/YugenReportsBot"),InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ", callback_data='upgrade')],
+                                      [InlineKeyboardButton("ʀᴇᴘᴏʀᴛ", url="https://t.me/Yugen_Bots_Support"),InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ", callback_data='upgrade')],
                                       [InlineKeyboardButton("ɴᴇᴛᴡᴏʀᴋ", url='https://t.me/YugenNetwork')]
                                                                     ])
 				)
